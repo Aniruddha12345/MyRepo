@@ -1,0 +1,83 @@
+* Properties = variables
+  behaviour = methods 
+  in class
+
+* Default values are not assigned to the local variables.
+
+* Name of method and parameters is called method signature(return type and modifiers list not),
+
+* Inside the constructor, this keyword is the first statement otherwise compilation error.
+
+* Compiler by default call super(); inside the child class constructor
+
+* Inside the constructors it is possible to call only one constructor at a time that calling must be first statement of the constructor. 
+
+* Thread is the light weight process within a process.
+
+* We can achieve basic functionality of a thread by extending Thread class because it provides some inbuilt methods like yield(), interrupt() etc. that are not available in Runnable interface.
+
+* Thread.sleep() throwsInterruptException which is compile time exception.
+
+* Polymorphism - 
+  1. Compile time polymorphism (Static , Early Binding , ex - Overloading)
+     1. Method Overloading
+     2. Constructor Overloading
+     3. Operator Overloading (ex - '+' operator act as concatenation in String and addition in integers)
+  2. Run time polymorphism (Dynamic , Late Binding , ex - Overriding)
+
+* Abstraction - Hiding the implementation from the user & just provide service (Bank ATM - withdraw, transfer,
+                are the service names that user see but don't see the implementation of that)
+                ex - Abstract Classes & Interfaces
+
+* If we write the non abstract methods in abstract class then also its fine. nothing like one abstract method is compulsory.
+  & object creation is not possible.
+
+* Tightly Encapsulated Class - when data members are private then.
+  To get and set the values from private members use getters and setters.
+
+* StrictFp modifier - applicable for class and concrete methods( all the calulations inside the methods follow IEEE754 standard to achieve platform independance)  
+
+* Instance Block - when object created by default instance block executed.
+                   If we define the constructor then first instance block executed then constructor.
+
+* Static Block - when class load into the memory.
+                 It is possible to print the statement in console without main method only upto 1.5v. After that main method is mandatory.
+                 The static blocks are executed at only one time for each and every class loading. But the instance blocks are executed based number of constructor’s execution.
+                 Whenever we are loading child class into the memory then automatically parent class is loaded hence the parent class static block is executed first and then child class static blocks are loaded. 
+
+* Adapter Class - It is a intermediate class between the interface and user defined class. And it contains empty implementation of interface methods.
+                  when we implements interface then it must to provide the implementation of methods. So create the adapter class having empty implementation of all that method
+                  and according to need in our user defined class write implementation.
+
+* equals() - Object class equals() mainly for reference comparison but in case of String, Integer like classes, they override the method and hence used for content comparison.                   
+             Classes like StingBuffer and all userDefined classes, equals() meant for reference comparison.
+
+* AutoBoxing & AutoUnBoxing - primitive to wrapper object (AutoBoxing)(valueOf())
+
+* I/O - 
+  Two transfer format - 1. Byte format 
+                        2. Character format
+  Streams to transfer data - 1. FileInputStream & FileOutputStream (Byte format)
+                             2. FileReader & FileWriter (Character format)
+  BufferedStream - to read/write the data line by line. It read the data from memory area called Buffer & write the data into Buffer.                            
+                   for bite format - BufferedInputStream & BufferedOutputStream
+                   for character format - BufferedReader & BufferedWriter 
+                   (Note : But first we have to create the object of FileInputStream & FileOutputStream OR FileReader & FileWriter 
+                           AND provide the created object as argument in Stream's object.)
+
+* Exception - 
+               if there is no exception in try block the catch blocks won’t be executed.(Even if the pointer is entered in try block)                            
+               Once the control is out of the try block the control never entered into try block once again.
+               In java class if we are declaring multiple catch blocks at that situation the catch block  order should be child to parent shouldn’t be parent to the child.  
+
+                                           
+
+ 
+
+
+
+
+
+  
+
+
