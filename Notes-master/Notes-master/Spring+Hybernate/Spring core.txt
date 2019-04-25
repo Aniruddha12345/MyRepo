@@ -1,0 +1,53 @@
+* --------------read the data from properties file---------------------------------
+	1. create properties file
+	sport.properties
+		foo.email =aniruddha.karuley7@gmail.com
+        foo.team = mumbai indians
+	
+	2. load the properties  file in spring config file  
+	   applicationContext.xml
+		<!-- load the properties file  -->
+    	 <context:property-placeholder location = "classpath:sport.properties"/>
+	   		
+	    reference values from properties file
+		
+		<bean id = "myCricketCoach"
+	   		class = "com.luv2code.springdemo.CricketCoach">
+	   		<property name = "fortuneService" ref = "myFortuneService"/>
+	   		<property name = "emailAddress" value = "{foo.email}"/>
+	   		<property name = "team" value = "{foo.team}"/>
+	   		</bean>
+			
+			
+-----------------Bean scope in spring (bean scope)--------------------------------------				
+* by default spring container creates only one instance of bean(singleton) but we can define the various scope of the bean such as
+  singleton
+  prototype - new object for each request
+  request
+  session
+  global-session
+  
+  for ex - 
+           <bean id = "myFortuneService"
+	   		class = "com.luv2code.springdemo.HappyFortuneService"
+			scope = "prototype">
+	   		</bean>
+			
+			
+
+			
+--------------------------bean lifecycle---------------------------------------------
+* diagram in the book
+* can define init-method and destroy-method
+  can add custom code during bean initialization and destruction (calling custom business logic)
+  can handle open db connection (init-method) and clean the resources(destroy-method)
+   
+   for ex - 
+   <bean id ="myCoach"
+	   		  class ="com.luv2code.springdemo.TrackCoach">
+	   		   	<constructor-arg ref = "myFortuneService"
+				init-method = "doMyStartUpStuff"
+				destroy-method = "doMyCleanUpStuff"
+	   		</bean>
+* define this method in your class
+			

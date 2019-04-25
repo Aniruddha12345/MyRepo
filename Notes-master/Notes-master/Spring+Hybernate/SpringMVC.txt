@@ -1,0 +1,27 @@
+* HttpServletRequest vs @RequestParam
+
+ 1. HttpServletRequest
+ 
+   eg - 
+    @RequestMapping("processFormVersion3")
+	public String processFormVersion3(HttpServletRequest request, Model model) {
+
+		String theName = request.getParameter("studentName");
+			return "helloWorld";
+			}
+ 2. @RequestParam
+
+ eg - 
+	@RequestMapping("processFormVersion3")
+	public String processFormVersion3(@RequestParam("studentName") String theName, Model model) {
+
+		//we can directly use the variable theName
+			return "helloWorld";
+			}
+			
+
+			
+*Spring MVC Form Tag (www.luv2code.com/spring-mvc-form-tags) and also custom validations			
+- to use this tags in jsp , specify the spring namespace at the beginning of the JSP
+   <%@ taglib prefix  = "form" uri = "http://www.springframework.org/tags/form" %>
+			

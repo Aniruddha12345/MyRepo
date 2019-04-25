@@ -1,0 +1,109 @@
+* java annotation in spring configuration is used to minimize the xml configuration 
+
+steps----
+1 . Enable component scanning in spring config file(applicationContext.xml)
+    
+		<!-- Added entry to enable component scanning -->
+	   	
+	   	<context:component-scan base-package="com.luv2code.springdemo"/>
+	   		
+	* this will scan all the component annotation in the packages
+
+2.  Add the @Component(specify bean id) annotation in your java file  	
+
+3. use this. see the example 
+
+
+* if we don't specify bean id at @Component then spring generate default bean id 
+  for ex - if class name is VolleyCoach then id become volleyCoach(first letter become small)
+  
+  
+  ------------Dependency injection--------------------
+  1. Constructor injection
+  2.Setter injection
+  3. field injection
+  
+  1.Constructor injection - see the example
+  
+  
+  
+  * if one interface have only one implementation then @Autowired is ok but if it have multiple implementations then use @Qualifier
+  
+  
+  * read property file with annotation
+  
+  1. sport.properties
+        foo.email=myeasycoach@luv2code.com
+		foo.team=Silly Java Coders
+		
+  2. Load the properties file in the XML config file.	
+
+        <context:property-placeholder location="classpath:sport.properties"/>
+  
+  3. use it in your class
+  
+    @Value("${foo.email}")
+    private String email;
+    
+    @Value("${foo.team}")
+    private String team;
+
+
+
+---------------------scope scope with annotation------------------------------------------------
+
+-by default beans are singleton 
+- we can define
+ for ex - 
+     1. @Component
+	    @Scope("singleton")
+	    public class TennisCoach implements Coach{
+		}
+	  
+	 2. @Component
+	    @Scope("prototype")
+	    public class TennisCoach implements Coach{
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

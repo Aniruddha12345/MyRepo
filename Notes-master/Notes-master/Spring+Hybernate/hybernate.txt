@@ -1,0 +1,63 @@
+--------------------Hybernate----------------------------------------
+* hybernate internally uses jdbc for database communication.
+* hybernate 5.2 needs java 8
+* we need the hybernate orm jars and connectivity driver for perticular database(i.e jar file)
+  
+* to test the database connection(without hybernate configuration file) - 
+  ex - 
+        String jdbcUrl = "jdbc:postgresql://localhost:5432/postgres";
+		String userName = "postgres";
+		String passWord = "Rolta@123";
+		try {
+			System.out.println("Connection to database :"+jdbcUrl);
+			
+			Connection myconn = DriverManager.getConnection(jdbcUrl, userName, passWord);
+			System.out.println("Connection Successful");
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+            }
+
+
+* In entity class while using hibernate, we use jpa annotation(javax.persistence) rather than (org.hibernate.annotations) because hybernate implemets jpa and hibernate recomments jpa annotations to use
+
+* Two key classes in hybernate to save and retrieve data
+	1. SessionFactory = read the hibernate conf file
+						create session objects
+						Heavy weight object
+						only create once in app
+
+	2. Session = Wraps a JDBC connection
+				 Main object used to save/retrieve objects
+				 Short-lived object
+				 retrieved from SessionFactory
+
+* see the code (hybernate-tutorial)
+
+
+* Primary key manipulation-------------
+  1. @GeneratedValue(strategy = GenerationType.IDENTITY) -> (commonly in mysql )bydefault auto-increment is handeled on this pk column by database & also assign pk for that column (imp-> creates seq internally (we can see in seq column in database UI)).
+  2.   -||-                     GenerationType.SEQUENCE) ->(In oracle) if there is sequence , mention it and use it.
+  3.   -||-                     GenerationType.AUTO) ->
+  4.    -||-                    GenerationType.TABLE) ->
+
+
+* Cascading ------------------
+ -If we don't specify cascading, then cascading not happen
+ - Types - 
+  1.PERSIST ->if entity is saved, releted entity is also saved
+  2.REMOVE ->
+  3.REFRESH 
+  4.DETACH
+  5.MERGE
+  6.ALL
+  ex- 
+     1. @OneToOne(cascade = CascadeType.ALL)
+	 @JoinColumn-------
+	 --------
+	 2. If want multiple then
+	 @OneToOne(cascade = {CascadeType.DETACH,CascadeType.PERSIST......})
+	 @JoinColumn-------
+	 --------
+
+*  One to one mapping (Bi-directional) indicating by 'mappedBy'( in InstructionDetail class )if we want to fetch the parent table by the child table.	 

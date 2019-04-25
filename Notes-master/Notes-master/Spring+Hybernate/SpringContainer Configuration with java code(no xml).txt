@@ -1,0 +1,32 @@
+* basically 3 ways to config spring container
+1. fully xml config
+2. with component-scan(annotations)
+3.java configuration class
+
+*steps (for java configuration class)----
+1.created a java class and annotated as @Config (define all bean)
+
+
+    @Confiuration
+	public class SportConfig{
+	}
+	
+
+2.add component scanning @ComponentScan (optional) (define package to scan)
+
+    @Confiuration
+	@ComponentScan("com.luv2code.sprinfDemo")
+	public class SportConfig{
+	}
+
+3. read this spring java configuration class
+
+AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SportConfig);
+
+4. retrieve bean from spring container.
+
+Coach theCoach  = context.getBean("tennisCoach",Coach.class);
+
+
+* there is more in it - read the property file
+                        ioc and di with java configuration class
