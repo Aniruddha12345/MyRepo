@@ -70,9 +70,10 @@
                Once the control is out of the try block the control never entered into try block once again.
                In java class if we are declaring multiple catch blocks at that situation the catch block  order should be child to parent shouldn’t be parent to the child.  
 
-                                           
+* Whenever we are calling method recursively then we are getting StackOverflowError.
+* If we are creating objects greater than the heap memory then we are getting OutOfMemoryError.
 
- 
+* Thread Schedular - it is part of JVM , and used to decide which thread is executed first but we can not predict the exact behaviour of the scheduler(which thread is executed first) in multithreaded environment
 
 
 
