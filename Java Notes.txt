@@ -73,7 +73,13 @@
 * Whenever we are calling method recursively then we are getting StackOverflowError.
 * If we are creating objects greater than the heap memory then we are getting OutOfMemoryError.
 
+Multithreading ----------------------------------------------------------------------------------------
 * Thread Schedular - it is part of JVM , and used to decide which thread is executed first but we can not predict the exact behaviour of the scheduler(which thread is executed first) in multithreaded environment
+* Thread.sleep() - cause current thread to sleep and we can also provide the argument with milli second.
+* Thread.yield() - pause the execution of current thread and give chance for waiting threads
+* Thread.join() - If thread want to wait until the execution of some other thread then
+* isAlive() - check whether that thread is live or not.
+* Synchronized modifier only applicable for methods not classes and variables.
 
 
 
