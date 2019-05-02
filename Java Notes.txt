@@ -80,6 +80,14 @@ Multithreading -----------------------------------------------------------------
 * Thread.join() - If thread want to wait until the execution of some other thread then
 * isAlive() - check whether that thread is live or not.
 * Synchronized modifier only applicable for methods not classes and variables.
+* Volatile - only applicable for variables. If the variables value keep on changing such type of variables we have to declare with volatile modifier.
+             suppose their is multithreaded environment and same thread's object is executing on different processors having different copies then, suppose one processor changes the value of variable then another processor don't know
+             the changes. So if we declare the variable as volatile then processor gets updated value.
+--------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
