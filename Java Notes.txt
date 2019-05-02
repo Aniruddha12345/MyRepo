@@ -85,6 +85,10 @@ Multithreading -----------------------------------------------------------------
              the changes. So if we declare the variable as volatile then processor gets updated value.
 --------------------------------------------------------------------------------------------------------
 
+* Ways to request the jvm for garbage collector - 1. System.gc()
+                                                  2. Runtime.getRuntime().gc();
+  just before destroying an object, garbace collector calls finalize() for completing clean up operations.
+
 
 
 
