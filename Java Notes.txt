@@ -1,4 +1,4 @@
-* Properties = variables
+﻿* Properties = variables
   behaviour = methods 
   in class
 
@@ -8,7 +8,7 @@
 
 * Inside the constructor, this keyword is the first statement otherwise compilation error.
 
-* Compiler by default call super(); inside the child class constructor
+* Compiler by default call super(); inside the child class constructor.
 
 * Inside the constructors it is possible to call only one constructor at a time that calling must be first statement of the constructor. 
 
