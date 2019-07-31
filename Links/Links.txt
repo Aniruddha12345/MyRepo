@@ -1,0 +1,7 @@
+1. For deploy spring-boot + Angular in single unit
+
+https://www.upnxtblog.com/index.php/2018/09/07/how-to-deploy-angular-6-spring-boot-app-as-single-deployment-unit/
+
+2.For deploy spring boot war in jboss(wildfly)
+
+https://code-adda.com/2018/06/how-to-deploy-spring-boot-war-in-jboss/
