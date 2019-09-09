@@ -1,0 +1,38 @@
+
+  <form #AddBook = "ngForm" method="POST" (ngSubmit) = "onClickSubmit(AddBook.value)" >
+    <table>
+      <tr>
+        <th>Book Name</th>
+        <th><input type = "text" name = "bk_name" placeholder = "Book " ngModel></th>
+      </tr>
+      <tr>
+          <th>Author Name</th>
+          <th><input type = "text" name = "author" placeholder = "Author name" ngModel></th>
+      </tr>
+
+      <tr>
+        <th>Book Category</th>
+        <th><input type = "text" name = "section" placeholder = "Book Category" ngModel></th>
+        </tr>
+
+        <tr>
+          <th>Publish Date</th>
+          <th><input type = "date" name = "published_date" placeholder = "Publish Date" ngModel></th>
+        </tr>
+        
+        <tr>
+          <th>Audit Crt Date</th>
+          <th><input type = "date" name = "bk_crt_date" placeholder = "Audit Crt Date" ngModel></th>
+        </tr>
+
+        <tr>
+          <th>Crt User</th>
+          <th><input type = " text" name = "bk_user" placeholder = "Crt User" ngModel></th>
+        </tr>
+</table>
+<input type = "submit" value = "Save">
+</form>
+<input type="button" onclick="location.href='http://localhost:4200/showallbooks';" value="ShowAllBooks" />
+
+
+

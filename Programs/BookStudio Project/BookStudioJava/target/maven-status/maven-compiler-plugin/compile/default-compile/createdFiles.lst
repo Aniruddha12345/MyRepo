@@ -1,0 +1,9 @@
+DAO\IGenericDao.class
+controller\BookController.class
+DAO\BookDaoImpl.class
+service\BookServiceImpl.class
+model\LibraryModel.class
+service\BookService.class
+DAO\AbstractDao.class
+DAO\BookDao.class
+controller\JsonReader.class
