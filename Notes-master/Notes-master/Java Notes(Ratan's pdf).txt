@@ -83,6 +83,7 @@ Multithreading -----------------------------------------------------------------
 * Volatile - only applicable for variables. If the variables value keep on changing such type of variables we have to declare with volatile modifier.
              suppose their is multithreaded environment and same thread's object is executing on different processors having different copies then, suppose one processor changes the value of variable then another processor don't know
              the changes. So if we declare the variable as volatile then processor gets updated value.
+             value of variables is accessed from main memory not from thread cache. 
 --------------------------------------------------------------------------------------------------------
 
 * Ways to request the jvm for garbage collector - 1. System.gc()
