@@ -1,0 +1,10 @@
+* Java Editions-
+1. Java SE(java standard edition) - It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.
+2. Java EE(java enterprise edition) - mainly used to develop web and enterprise applications. It is built on the top of the Java SE platform. It includes topics like Servlet, JSP, Web Services, EJB, JPA, etc.
+3. Java ME(java micro edition) - mainly used to develop mobile applications.
+4. Java FX - It is used to develop rich internet applications. It uses a light-weight user interface API.
+
+* In cpp, operator overloading is there & java doesn't suppport operator overloading.
+  In cpp, const and goto keywords are there but in java they are there but unused instead of that final & continue is there.
+  cpp support both call by value & call by reference but java only support call by value.
+  
