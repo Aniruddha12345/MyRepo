@@ -1,0 +1,9 @@
+* typescript is a superset of javascript which commes with classes, interfaces, types and much more feature.
+  typescript did't work on browser so ts compiles to js and this work is done by the cli itselt.
+
+* To install boostrap using cli-
+  so npm install --save bootstrap3 & in angular.json inside styles array add one more entry of this boostrap.min.css(it also have style.css)
+  which uses globally.
+  angular.json use for default configuration.
+
+* how angular project boostrap- see the course lecture in basics(how angular app get loaded and started)

@@ -1,0 +1,12 @@
+1. overview
+2. components & databindings
+3. directives
+4. services and dependency injection
+5. routing
+6. observables
+7. forms
+8. pipes
+9. http
+10. authentication
+11. optimisation & ngModules
+12. Animations
