@@ -7,3 +7,14 @@
   angular.json use for default configuration.
 
 * how angular project boostrap- see the course lecture in basics(how angular app get loaded and started)
+
+* In ts if
+          name:String="Aniruddha";
+  then in html, to print the string we use string interpolation {{name}} -------Data Binnding
+  simily, we can use method
+          printName(){
+              return "Aniruddha";
+          }
+          then in html, we can use {{printName}}.       ------------Data Binnding
+
+* see property binding lecture in angular udemy course (Inside basics)          
