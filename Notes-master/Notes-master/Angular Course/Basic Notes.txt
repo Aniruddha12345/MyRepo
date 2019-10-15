@@ -17,4 +17,10 @@
           }
           then in html, we can use {{printName}}.       ------------Data Binnding
 
-* see property binding lecture in angular udemy course (Inside basics)          
+* see property binding lecture in angular udemy course (Inside basics)  
+
+* ngif else is also there. search it.   
+* we can change the styling of the elements dynamically by using ngStyle. - see the udemy course lecture 37. 
+  we can apply css classes dynamically by using ngClass -see lecture 38.
+  (since here, both the condition work in following case
+  if i want to change the style or css of the something while condition). Therefore this is very imp.
