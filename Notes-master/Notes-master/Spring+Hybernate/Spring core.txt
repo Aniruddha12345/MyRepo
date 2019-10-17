@@ -1,3 +1,12 @@
+*------------------IOC container-----------------------------
+Design to construction and management of the objects
+
+
+
+
+
+
+
 * --------------read the data from properties file---------------------------------
 	1. create properties file
 	sport.properties

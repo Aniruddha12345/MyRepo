@@ -8,3 +8,17 @@
   In cpp, const and goto keywords are there but in java they are there but unused instead of that final & continue is there.
   cpp support both call by value & call by reference but java only support call by value.
   
+* jvm - virtual machine which takkes bite code and run on system. it is oplatform dependant
+  jre - runtime environment consists of jvm + jars to run the application
+  jdk - developement environment - jre + tools for developing the application(javac, java)
+
+* Association, aggregation and composition.
+
+* object based vs object oriented programming language - objects based does't support inheritance(ex javascript , vbscript).
+
+* JIT compiler - 
+   
+   sourceCode.java--------> Compiler ----------> ByteCode -------
+                                                                 |
+                                                                 |
+                   Native Machine Code<-------JIT Compiler <-----|
