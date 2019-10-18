@@ -22,3 +22,8 @@
                                                                  |
                                                                  |
                    Native Machine Code<-------JIT Compiler <-----|
+ JIT compiler in jvm compile bytecode into native machie code at run time.
+
+* A java constructor can have access modifier while declaring(private, protected, public, default constructor)for control of object creation but can not be abstract, final, synchronized, static.
+
+ 
