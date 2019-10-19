@@ -58,3 +58,8 @@
 							ChildClassTest s = new ChildClassTest();
 						}
 					}
+
+* In class if there is instance block and constructor then while object creation, first instance block executed then construtor executed.
+
+* For RUTIME POLYMORPHISM see the javatpoint -> Runtime polymorphism(with methods and data members)					
+
