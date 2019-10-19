@@ -26,4 +26,35 @@
 
 * A java constructor can have access modifier while declaring(private, protected, public, default constructor)for control of object creation but can not be abstract, final, synchronized, static.
 
- 
+* Is-A relationship = Inheritance(parent-child relationship) ex- Swift is a car.
+  Has-A relationship = If a class have an entity reference. ex -     class Employee{  
+    																				int id;  
+   																					String name;  
+    																				Address address;//Address is a class  
+    																				...  
+   
+    																				}  
+* Overridong - an overridden method can have a different access modifier but it cannot lower the access scope.
+                  1. Methods declared public in a superclass also must be public in all subclasses.
+    		      2. Methods declared protected in a superclass must either be protected or public in subclasses; they cannot be private.
+                  3. Methods declared private are not inherited at all, so there is no rule for them.
+
+
+
+* 
+					public class SuperClassTest {
+						SuperClassTest() {
+							System.out.println("Hiii");
+						}
+
+					}
+
+					class ChildClassTest extends SuperClassTest {
+						/*
+						 * Internally 
+						 * ChildClassTest(){ super();}
+						 */
+						public static void main(String[] args) {
+							ChildClassTest s = new ChildClassTest();
+						}
+					}
