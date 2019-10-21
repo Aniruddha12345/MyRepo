@@ -61,5 +61,50 @@
 
 * In class if there is instance block and constructor then while object creation, first instance block executed then construtor executed.
 
-* For RUTIME POLYMORPHISM see the javatpoint -> Runtime polymorphism(with methods and data members)(see why data members not supports runtime polymorpism).				
+* For RUTIME POLYMORPHISM see the javatpoint -> Runtime polymorphism(with methods and data members)(see why data members not supports runtime polymorpism).
+
+* Interface - 
+  
+  * By default interface's fields are public, static, final & methods are public, abstract
+  * Since java 8 - default & static method 
+  * Since java 9 - private method
+
+* Packages - 
+
+  * If you import a package, subpackages will not be imported.
+  * If you import a package, all the classes and interface of that package will be imported excluding the classes and interfaces of the subpackages. Hence, you need to import the subpackage as well.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
