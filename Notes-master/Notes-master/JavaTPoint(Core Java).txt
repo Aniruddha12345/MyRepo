@@ -74,6 +74,14 @@
   * If you import a package, subpackages will not be imported.
   * If you import a package, all the classes and interface of that package will be imported excluding the classes and interfaces of the subpackages. Hence, you need to import the subpackage as well.
 
+* Object class methods(total 9 methods)
+  1. toString() - provide string representation oof object. 
+                  public String toString()
+                  {
+                    return getClass().getName() + "@" + Integer.toHexString(hashCode());
+                  }
+  2. hashCode() - jvm generate the unque code called hashcode. A common misconception about this method is that hashCode() method returns the address of object, which is not correct. It convert the internal address of object to an integer by using an algorithm. Override of hashCode() method needs to be done such that for every object we generate a unique number. (for ex. i did in hashSet)
+  3. 
 
 
 
