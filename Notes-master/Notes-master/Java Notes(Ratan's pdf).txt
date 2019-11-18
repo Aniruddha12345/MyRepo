@@ -1,4 +1,4 @@
-﻿* Properties = variables
+* Properties = variables
   behaviour = methods 
   in class
 
@@ -64,6 +64,7 @@
                    for character format - BufferedReader & BufferedWriter 
                    (Note : But first we have to create the object of FileInputStream & FileOutputStream OR FileReader & FileWriter 
                            AND provide the created object as argument in Stream's object.)
+  In io package, we only manipulate .txt files not doc or excel files. To do that there are jars we have to add explicitely(pui.jar etc)
 
 * Exception - 
                if there is no exception in try block the catch blocks won’t be executed.(Even if the pointer is entered in try block)                            
