@@ -82,7 +82,7 @@ class CompareTestEmp implements Comparator{
 		Set<Employee> treeset = new TreeSet<Employee>(new CompareTestEmp());
 		treeset.add(new Employee("Aniruddha", 300));
 		treeset.add(new Employee("Tushar", 500));
-		treeset.add(new Employee("Shalini", 900));
+		treeset.add(new Employee("Shuham", 900));
 		treeset.add(new Employee("Siddarth", 200));
 		treeset.add(new Employee("Gaurav", 700));
 		treeset.add(new Employee("Siddarth", 200));
