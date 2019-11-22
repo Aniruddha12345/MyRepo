@@ -1,1 +1,7 @@
 * Interpretation - line by line execution of the code.
+
+* Object based programming language - having all characteristics of object orientation except inheritance & polymorphism.
+
+* static method can not access non static data member and functions directly. Also this & super are not applicable for static method.
+
+* Composition - it is the perticular case of aggregation which represents strong relationship. For ex - class has students, car has engine(without student there is no class so). Aggregation represents weak relationship but composition represents strong relationship.
