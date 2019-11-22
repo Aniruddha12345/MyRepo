@@ -1,0 +1,1 @@
+* Interpretation - line by line execution of the code.
