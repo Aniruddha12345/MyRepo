@@ -5,3 +5,5 @@
 * static method can not access non static data member and functions directly. Also this & super are not applicable for static method.
 
 * Composition - it is the perticular case of aggregation which represents strong relationship. For ex - class has students, car has engine(without student there is no class so). Aggregation represents weak relationship but composition represents strong relationship.
+
+* Can we declare a constructor as final - as constructor is only for that class so not making sense of declare it as final. It is already final man.
