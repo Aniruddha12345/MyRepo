@@ -7,3 +7,7 @@
 * Composition - it is the perticular case of aggregation which represents strong relationship. For ex - class has students, car has engine(without student there is no class so). Aggregation represents weak relationship but composition represents strong relationship.
 
 * Can we declare a constructor as final - as constructor is only for that class so not making sense of declare it as final. It is already final man.
+
+* Anonymous object - new Employee();
+
+* shutdown hook - it is a thread which invoke implicitely just before jv shutdown. We can perform cleanup operations here. 
