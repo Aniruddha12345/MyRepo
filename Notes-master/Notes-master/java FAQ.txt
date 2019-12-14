@@ -10,4 +10,4 @@
 
 * Anonymous object - new Employee();
 
-* shutdown hook - it is a thread which invoke implicitely just before jv shutdown. We can perform cleanup operations here. 
+* shutdown hook - it is a thread which invoke implicitely just before jvm shutdown. We can perform cleanup operations here. 
