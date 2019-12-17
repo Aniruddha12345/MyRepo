@@ -49,10 +49,17 @@ SessionFactory.getCurrentSession() - we don't have to close it. It closes when S
   2. Persistence - session.save(e) - now the object is associated with session and all the track of object and manupulation.
   3. Detached - when session is closed, then object e is detached
 
+
 * get() vs load()
 When get() it checks the database for result and not found then return null.
 When load() it checks the cache first not found then database not found then return ObjectNotFound Excaption.
 (Note - If you confirm know the data is present in database then go for load() and if not then get()).
+
+
+* update() vs merge() -
+
+
+
 
 
 
