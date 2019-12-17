@@ -1,0 +1,60 @@
+* GeneratedValue -
+
+@Id
+    @SequenceGenerator(name="id", initialValue=1, allocationSize=100)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="id") 
+    private Integer id;
+
+ Types for strategy - Identity
+ 					  Sequence
+ 					  Auto
+
+* openSession() vs .getCurrentSession() -  session is short term object
+SessionFactory.openSession() - open session and we have to close it, it is better work for multithreaded environment.
+SessionFactory.getCurrentSession() - we don't have to close it. It closes when SessionFactory is closed.
+
+* HQL - Hibernate Query Language -------database independant 
+* HCQL - HIbernate Criteria Query Language
+         Criteria wise filter the result (Like, in, between)
+         ex -
+                Crietria c=session.createCriteria(Emp.class);  
+ 				c.setFirstResult(10);  
+				c.setMaxResult(20);  
+      			List list=c.list();  
+
+
+* NamedQuery - Define at once, use mumtiple times.
+           ex - 
+           @NamedQueries(  
+    	{  
+        	@NamedQuery(  
+        	name = "findEmployeeByName",  
+        	query = "from Employee e where e.name = :name"  
+       	 )  
+    	}  
+		) 
+		and then Query query = sessin.getNamedQuery(findEmployeeByName).
+
+      (Note - We can also create named Query while Query query = createNamedQuery(............)).
+
+
+* Cashing - 
+ 1 . First Level Cache - defualt it is there. Is is base on session. If current Session is there, cashing is done and the result is cached. If we fire query then it check cache for that result and there is no database call.
+ 						Data is available untill closing of session.
+
+ 2. Second Level Cache - We have to unable it in hb.cfg.xml by adding property (There are types of Second Level Cache). It is globally available. And data is accessed by anhy session object of any session.
+
+* Different states of objects in hibernate - 
+  1. Transient - Emp e = new Emp(1,"Aniruddha") - this is object and it does not belong to any session.
+  2. Persistence - session.save(e) - now the object is associated with session and all the track of object and manupulation.
+  3. Detached - when session is closed, then object e is detached
+
+* get() vs load()
+When get() it checks the database for result and not found then return null.
+When load() it checks the cache first not found then database not found then return ObjectNotFound Excaption.
+(Note - If you confirm know the data is present in database then go for load() and if not then get()).
+
+
+
+
+
