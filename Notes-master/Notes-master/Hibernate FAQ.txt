@@ -57,6 +57,16 @@ When load() it checks the cache first not found then database not found then ret
 
 
 * update() vs merge() -
+Suppose we are dealing with any employee object in the same session then we should use update() or saveOrUpdate() method.
+
+if you want to save your modifications at any time with out knowing about the state of an session, then use merge() in hibernate.
+
+
+* save() vs saveOrUpdate() vs persist() -  
+
+
+
+* SessionFactory is thread safe(immutable) but session object is not thread safe.
 
 
 
