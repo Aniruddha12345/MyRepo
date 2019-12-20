@@ -73,7 +73,7 @@
 
 * Whenever we are calling method recursively then we are getting StackOverflowError.
 * If we are creating objects greater than the heap memory then we are getting OutOfMemoryError.
-* For user-defined exception, if we add try-catch of or throws then compilation error, so unable to handle the user-defined exception.
+(Not sure about it - - - For user-defined exception, if we add try-catch or throws then compilation error, so unable to handle the user-defined exception.) 
 
 Multithreading ----------------------------------------------------------------------------------------
 * Thread Schedular - it is part of JVM , and used to decid1e which thread is executed first but we can not predict the exact behaviour of the scheduler(which thread is executed first) in multithreaded environment

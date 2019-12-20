@@ -64,6 +64,9 @@ if you want to save your modifications at any time with out knowing about the st
 
 * save() vs saveOrUpdate() vs persist() -  
 
+Save - It save the entity ad return the generated primary key                         Persist- It save the entity ad return void.
+           										       If the entity is already present then throw exception.
+
 
 
 * SessionFactory is thread safe(immutable) but session object is not thread safe.
