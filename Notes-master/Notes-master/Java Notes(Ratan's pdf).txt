@@ -69,7 +69,12 @@
 * Exception - 
                if there is no exception in try block the catch blocks won’t be executed.(Even if the pointer is entered in try block)                            
                Once the control is out of the try block the control never entered into try block once again.
-               In java class if we are declaring multiple catch blocks at that situation the catch block  order should be child to parent shouldn’t be parent to the child.  
+               In java class if we are declaring multiple catch blocks at that situation the catch block  order should be child to parent shouldn’t be parent to the child. 
+
+  * try{
+  
+  }finally{     -->this is perfectly valid. if there is exception in try then there is not catch for handelling the excetion (Only catch handle the exception) finally
+  }                executed for any clean up operations and after that there is abnormal termination.     
 
 * Whenever we are calling method recursively then we are getting StackOverflowError.
 * If we are creating objects greater than the heap memory then we are getting OutOfMemoryError.
