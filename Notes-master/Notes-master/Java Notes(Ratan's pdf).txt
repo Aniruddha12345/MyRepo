@@ -83,8 +83,9 @@
 Multithreading ----------------------------------------------------------------------------------------
 * Thread Schedular - it is part of JVM , and used to decid1e which thread is executed first but we can not predict the exact behaviour of the scheduler(which thread is executed first) in multithreaded environment
 * Thread.sleep() - cause current thread to sleep and we can also provide the argument with milli second.
-* Thread.yield() - pause the execution of current thread and give chance for waiting threads
+* Thread.yield() - pause the execution of current thread and give chance for waiting threads for same priority to execute.
 * Thread.join() - If thread want to wait until the execution of some other thread then
+* Thread.notify() - The notify() method of thread class is used to wake up a single thread.
 * isAlive() - check whether that thread is live or not.
 * Synchronized modifier only applicable for methods not classes and variables.
 * Volatile - only applicable for variables. If the variables value keep on changing such type of variables we have to declare with volatile modifier.
