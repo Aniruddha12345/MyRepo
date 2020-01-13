@@ -92,6 +92,11 @@ Multithreading -----------------------------------------------------------------
              suppose their is multithreaded environment and same thread's object is executing on different processors having different copies then, suppose one processor changes the value of variable then another processor don't know
              the changes. So if we declare the variable as volatile then processor gets updated value.
              value of variables is accessed from main memory not from thread cache. 
+
+
+ * suspend() & resume() only present in Thread class--- +point of Thread
+   suspend()- turn running into waiting. & resume()-  resume the execution of suspended thread only.
+              his method is used if you want to stop the thread execution and start it again when a certain event occurs.            
 --------------------------------------------------------------------------------------------------------
 
 * Ways to request the jvm for garbage collector - 1. System.gc()
