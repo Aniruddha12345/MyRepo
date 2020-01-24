@@ -98,7 +98,7 @@ Multithreading -----------------------------------------------------------------
    suspend()- turn running into waiting. & resume()-  resume the execution of suspended thread only.
               his method is used if you want to stop the thread execution and start it again when a certain event occurs.   
 
- * default priority is only given to main thread(5 or NORM_PRIORITY) and all the thread is gained priority same as that of it's parent priority.             
+ * default priority is only given to main thread(5 or NORM_PRIORITY) and all the thread is gained priority same as that of it's parent thread's priority.             
 
 
 --------------------------------------------------------------------------------------------------------
