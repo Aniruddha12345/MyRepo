@@ -11,3 +11,17 @@
 * Anonymous object - new Employee();
 
 * shutdown hook - it is a thread which invoke implicitely just before jvm shutdown. We can perform cleanup operations here. 
+
+* Iterating over Map - 
+		Map<Integer, String> map = new HashMap();
+		map.put(1, "Aniruddha");
+		map.put(2, "Shubham");
+		map.put(3, "Aniket");
+
+		for (Map.Entry<Integer, String> entry : map.entrySet()) {       //if want then map.keySet() and map.values()
+
+			System.out.println(entry.getKey());
+			System.out.println(entry.getValue());
+			System.out.println(entry);
+		}
+	}
