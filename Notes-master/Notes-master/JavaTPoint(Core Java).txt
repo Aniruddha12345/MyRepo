@@ -90,40 +90,11 @@
   5. finalise() - garbage collector calls this method just before garbage collected. We should override this method for close resources or clean-up operations.
   6. clone()
   (below three are for concurrency)
-  7. wait()
+  7. wait()  --having three different arguments, so in Object class total 11 ethods are there.
   8. notify()
   9. notifyAll()
 
 * 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -14,7 +14,7 @@
 
 * Thread is the light weight process within a process.
 
-* We can achieve basic functionality of a thread by extending Thread class because it provides some inbuilt methods like yield(), interrupt() etc. that are not available in Runnable interface.
+* We can achieve basic functionality of a thread by extending Thread class because it provides some inbuilt methods like yield(), interrupt() & also suspend(), resume() etc. that are not available in Runnable interface.
 
 * Thread.sleep() throwsInterruptException which is compile time exception.
 
