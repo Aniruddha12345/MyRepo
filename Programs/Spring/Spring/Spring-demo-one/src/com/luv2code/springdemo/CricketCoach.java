@@ -4,6 +4,7 @@ public class CricketCoach implements Coach {
 	private FortuneService fortuneService;
 	private String emailAddress;
 	private String team;
+	private String test
 	
 	public String getEmailAddress() {
 		return emailAddress;
