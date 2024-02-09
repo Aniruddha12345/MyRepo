@@ -21,6 +21,11 @@ public class Employee {
 	public void setSalary(Integer salary) {
 		this.salary = salary;
 	}
+
+	public Integer add (Integer a, Integer b) {
+		return a+b;
+	}
+	
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", salary=" + salary + "]";
